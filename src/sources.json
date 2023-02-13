@@ -1,0 +1,17 @@
+{
+    "test": ["https://thehiddenwiki.org"],
+    "directories": ["https://thehiddenwiki.org",
+                    "https://darkweburls.com/",
+                    "https://darkweblinks.com/",
+                    "https://darkweb-links.co/dark-web-links/",
+                    "https://darkweb.link/",
+                    "https://darkweb.wiki/dark-web-links/",
+                    "http://torlinks.net/sitemap.xml",
+                    "https://github.com/5ky1ar/Awesome-Onion-Links",
+                    "https://github.com/praveenjalasutram/Darkweb-Onion-Links",
+                    "https://github.com/Giddyspurz/Dark-Web-Links/blob/main/Ransomware-Sites.txt",
+                    "https://github.com/alecmuffett/real-world-onion-sites#real-world-onion-sites",
+                    "https://github.com/mounibkamhaz/DarkWeb",
+                    "https://www.darkwebsearchengine.org/engine/Main_Page"],
+    "search_engines": ["google.com", "ahmia.fi"]
+}

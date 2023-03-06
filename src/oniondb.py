@@ -92,6 +92,33 @@ def get_onion(url: str):
 def get_onion_source(url: str, source: str):
     return Onion.get(Onion.url == url, Onion.source == source)
 
+def get_all_onions():
+    query = Onion.select()
+    all_onions = [onion.url for onion in query]
+    all_onions = list(set(all_onions))
+    return all_onions
+
+def get_all_onions_v3():
+    query = Onion.select().where(Onion.url_version == "v3")
+    all_onions = [onion.url for onion in query]
+    all_onions = list(set(all_onions))
+    return all_onions
+
+
+def get_all_onions_status(status: int):
+    query = Onion.select().where(Onion.status == status)
+    all_onions = [onion.url for onion in query]
+    all_onions = list(set(all_onions))
+    return all_onions
+
+
+def get_all_onions_captcha(captcha: bool):
+    query = Onion.select().where(Onion.captcha == captcha)
+    all_onions = [onion.url for onion in query]
+    all_onions = list(set(all_onions))
+    return all_onions
+
+
 
 def update_onion(url: str, key: str, value):
     query = Onion.get(Onion.url == url)
@@ -101,3 +128,7 @@ def update_onion(url: str, key: str, value):
 
 
 init_db()
+print(len(get_all_onions()))
+print(len(get_all_onions_v3()))
+print(len(get_all_onions_status(200)))
+print("done")
